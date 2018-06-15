@@ -1,0 +1,23 @@
+{
+    "fluentMethods": true,
+    "relationships": [],
+    "fields": [
+        {
+            "fieldName": "lastname",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "dob",
+            "fieldType": "ZonedDateTime"
+        }
+    ],
+    "changelogDate": "20180614194714",
+    "dto": "no",
+    "service": "no",
+    "entityTableName": "person",
+    "jpaMetamodelFiltering": false,
+    "pagination": "pagination"
+}
