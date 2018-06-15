@@ -61,6 +61,7 @@ public class ApitrackingApp {
      * @throws UnknownHostException if the local host name could not be resolved into an address
      */
     public static void main(String[] args) throws UnknownHostException {
+    	System.setProperty("org.apache.catalina.connector.RECYCLE_FACADES", "true");
         SpringApplication app = new SpringApplication(ApitrackingApp.class);
         DefaultProfileUtil.addDefaultProfile(app);
         Environment env = app.run(args).getEnvironment();
